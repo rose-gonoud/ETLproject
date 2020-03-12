@@ -23,9 +23,7 @@ Procedures will vary depending on operating system, so follow specific recommend
 
 The file ETL_data_cleaning.py may be downloaded and run from this repository, and contains all steps detailed below for replicating our data cleaning and database loading.
 
-The initial data sources:
-
-## Data URLs
+## Original Data URLs
 * https://projects.fivethirtyeight.com/polls/
 * https://www.kaggle.com/huffingtonpost/presidential-approval
 
