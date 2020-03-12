@@ -9,12 +9,17 @@ Our aim is to clean up the datasets and combine them using pandas. After that we
 
 Create a python environment for this project and include the following modules (also stated in requirements.txt):
 
-``` jupyter-client==5.3.4
+```
+jupyter-client==5.3.4
 jupyter-core==4.6.1
 pandas==0.25.3
 pymongo==3.10.1
 python-dateutil==2.8.1
 ```
+
+Install MongoDB:
+
+Procedures will vary depending on operating system, so follow specific recommendations contained in the MongoDB documentation: https://docs.mongodb.com/manual/installation/
 
 The file ETL_data_cleaning.py may be downloaded and run from this repository, and contains all steps detailed below for replicating our data cleaning and database loading.
 
