@@ -5,6 +5,18 @@
 "We selected two datasets recording the approval ratings of the current US president, one from Kaggle and one from FiveThirtyEight. Both datasets report the results of every public poll claiming to provide a representative sample of the population or electorate.
 Our aim is to clean up the datasets and combine them using pandas. After that we will upload the resulting data into a non relational database in JSON format for easy querying."
 
+## Installations
+
+Create a python environment for this project and include the following modules (also stated in requirements.txt):
+
+``` jupyter-client==5.3.4
+jupyter-core==4.6.1
+pandas==0.25.3
+pymongo==3.10.1
+python-dateutil==2.8.1 ```
+
+The file ETL_data_cleaning.py may be downloaded and run from this repository, and contains all steps detailed below for replicating our data cleaning and database loading.
+
 The initial data sources:
 
 ## Data URLs
