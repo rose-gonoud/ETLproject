@@ -7,9 +7,13 @@ Our aim is to clean up the datasets and combine them using pandas. After that we
 
 The initial data sources:
 
-## Data urls
+## Data URLs
 * https://projects.fivethirtyeight.com/polls/
 * https://www.kaggle.com/huffingtonpost/presidential-approval
+
+## Technical Procedure
+
+The above links lead to two seperate CSVs containing presidential approval data - specifically, approval data for Trump between the years 2017 and 2020. The following procedure outlines our process for merging these two collections of data into a single, queryable database.
 
 1. At the end of 03/07 we had loaded each CSV into a Pandas dataframe. Each CSV kept track of the pollster that any given row of data was collected from. We standardized pollster names across the CSVs for eventual merging. For efficiency, we did this with dictionary mapping. The HuffPost dataset used abbreviated pollster names that we thought were unclear. A dictionary was manually created, where the keys were the HuffPost pollster abbreviations, and their values were longer-form names we desired to use in the final database (the names that were already used in the FiveThirtyEight dataset). We used the df.replace() method to replace each instance of the keys with their associated values.
 
@@ -21,7 +25,7 @@ The initial data sources:
 
 5. We ultimately created a single collection with the data we aggregated as per the above procedure. The consolidation into a single collection, from our perspective, made the data more eaily queryable. Our first test query was a filter by pollster, and the second a filter by date, which confirmed that we had seamlessly merged both datasets into this database. All data displayed without a hint that they were once seperate. See the included Jupyter Notebook for additional documentation of our process. 
 
-This work was done in conference, over Tristain's computer. We all contributed to the code that executed the data cleaning and database loading, though we understand the commit history may tell another story. 
+This work was done in conference, with Rose Gonoud, Luisa Zini, and Tristan Holmes, over Tristan's computer. We all contributed to the code that executed the data cleaning and database loading, though we understand that the commit history may tell another story.
 
 
 
