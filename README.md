@@ -13,7 +13,8 @@ Create a python environment for this project and include the following modules (
 jupyter-core==4.6.1
 pandas==0.25.3
 pymongo==3.10.1
-python-dateutil==2.8.1 ```
+python-dateutil==2.8.1
+```
 
 The file ETL_data_cleaning.py may be downloaded and run from this repository, and contains all steps detailed below for replicating our data cleaning and database loading.
 
