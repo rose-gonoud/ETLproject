@@ -10,11 +10,16 @@ Our aim is to clean up the datasets and combine them using pandas. After that we
 Create a python environment for this project and include the following modules (also stated in requirements.txt):
 
 ```
+jupyter==1.0.0
 jupyter-client==5.3.4
-jupyter-core==4.6.1
-pandas==0.25.3
+jupyter-console==6.0.0
+jupyter-core==4.6.3
+pandas==1.0.1
 pymongo==3.10.1
+pyparsing==2.4.6
+pyrsistent==0.15.6
 python-dateutil==2.8.1
+
 ```
 
 Install MongoDB:
